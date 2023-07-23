@@ -10,7 +10,7 @@ mvn clean compile package -DskipTests
 echo "Build of the ChatGPT Docker Image started at: $(date)"
 echo "BUILD_DATE = ${BUILD_DATE}" 
 
-sudo docker build . --network host --rm --tag kulkeez/spring-sookti:0.1 
+sudo docker build . --network host --rm --tag kulkeez/chatgpt-service:0.1 
 
 echo "Build of the ChatGPT Docker Image ended at: $(date)"
 ELAPSED=$SECONDS
